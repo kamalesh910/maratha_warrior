@@ -18,6 +18,16 @@
             });
         }
 
+	const images = document.querySelectorAll('.gallery .box img');
+
+        images.forEach((img) => {
+            // Add an error event listener to each image
+            img.onerror = function() {
+                // Remove the entire parent .box div if image fails to load
+                this.parentElement.remove();
+            };
+        });
+	
 
         window.onload = openImageInNewTab;
     </script>
