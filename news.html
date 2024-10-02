@@ -6,7 +6,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>शिवसंग्राम सामाजिक उपक्रम</title>
 	<link rel="icon" href="https://c8.alamy.com/comp/2EABYNJ/vector-illustration-of-chatrapati-shivaji-maharaj-maratha-clan-from-maharashtra-india-chhatrapati-shivaji-maharaj-jayanti-2EABYNJ.jpg" >
+<script>
+        function openImageInNewTab() {
+            const images = document.querySelectorAll('#imageGallery img');
 
+            images.forEach((image) => {
+                image.addEventListener('click', () => {
+                    const imageUrl = image.src;
+                    window.open(imageUrl, '_blank');
+                });
+            });
+        }
+
+
+        window.onload = openImageInNewTab;
+    </script>
 <link rel="stylesheet" type="text/css" href="../newsPaper.css">
 </head>
 
